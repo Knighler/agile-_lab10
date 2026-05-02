@@ -1,5 +1,9 @@
-name: Action Basics Demo
-on: [push]
+name: Hello Agile
+on:
+ push:
+  branches: [ dev ] 
+ pull_request:
+  branches: [ main ] 
 jobs:
  build:
    runs-on: ubuntu-latest
